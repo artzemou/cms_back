@@ -3,9 +3,11 @@ const mongoose = require('mongoose')
 
 const uri =
   'mongodb+srv://m_e:fs85aoMTY3Zj63Ju@cluster0-srska.gcp.mongodb.net/alias'
+  // 'mongodb://localhost:27017/alias'
+let url = process.env.MONGODB_URI || global.MONGODB_URI || uri
 
-const url = process.env.MONGODB_URI || global.MONGODB_URI || uri
-
+// url = 'mongodb://localhost:27017/alias'
+console.log(url)
 const connection = mongoose.createConnection(url, {
   connectTimeoutMS: 5000,
   reconnectInterval: 100,
