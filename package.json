@@ -33,7 +33,7 @@
     "restify-errors": "^7.0.0",
     "restify-jwt-community": "^1.0.11",
     "serverless-http": "^1.9.1",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "stripe": "^7.4.0",
     "url-regex": "^4.1.1"
   },
